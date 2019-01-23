@@ -8,12 +8,12 @@ The neural_test.py tries to predict the output given 3 binary inputs. If the fir
 
 This is the truth table
 
- ![tabel](table.png)
+ ![tabel](imgs/table.png)
  
  
 This is the neurals diagram
  
- ![neural](Neural.png)
+ ![neural](imgs/Neural.png)
 
 
 **This was my First neural network**
