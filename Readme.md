@@ -16,4 +16,4 @@ This is the neurals diagram
  ![neural](imgs/Neural.png)
 
 
-**This was my First neural network**
+
