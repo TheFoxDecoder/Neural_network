@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+import timeit
 def run_test():
     # Importing the dataset
     dataset = pd.read_csv('db/position_salaries.csv.xls')
@@ -32,9 +33,11 @@ def run_test():
         plt.xlabel('Position level')
         plt.ylabel('Salary')
         plt.show()
+        plt.savefig('polynomial_plots/linear.png')
+        plt.savefig('line_plot.pdf') 
         return
-    #viz_linear()
-
+    viz_linear()
+    
     # Fitting Polynomial Regression to the dataset
     from sklearn.preprocessing import PolynomialFeatures
     poly_reg = PolynomialFeatures(degree=4)
@@ -50,9 +53,10 @@ def run_test():
         plt.xlabel('Position level')
         plt.ylabel('Salary')
         plt.show()
+        plt.savefig('polynomial_plots/polymonial.png')
         return
-    #viz_polymonial()
-
+    viz_polymonial()
+    
     # Additional feature
     # Making the plot line (Blue one) more smooth
     def viz_polymonial_smooth():
@@ -65,9 +69,10 @@ def run_test():
         plt.xlabel('Position level')
         plt.ylabel('Salary')
         plt.show()
+        plt.savefig('polynomial_plots/polymonial_smooth.png')
         return
-    #viz_polymonial_smooth()
-
+    viz_polymonial_smooth()
+    
     # Predicting a new result with Linear Regression
     lin_reg.predict([[5.5]])
     #output should be 249500
@@ -77,7 +82,7 @@ def run_test():
     #output should be 132148.43750003
 
 if __name__ == "__main__":
-    import timeit
+    
     start_time = timeit.default_timer()
     print(f'Time --> {start_time}s',end='\r')
     run_test()
