@@ -1,4 +1,4 @@
-**Simple Neural Network**
+## Simple Neural Network 
 
 Creating a simple neural network in Python with one input layer (3 inputs)and one output neuron. A neural network with no hidden layers is called a perceptron. In the training_version.py I train the neural network in the clearest way possible, but it's not really useable. The outputs of the training can be found in outputs.txt . neural_test.py is an object and can be used by giving in different inputs.
 
