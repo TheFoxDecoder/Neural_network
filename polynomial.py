@@ -35,7 +35,7 @@ def run_test():
         plt.show()
         plt.savefig('polynomial_plots/linear.png')
         plt.savefig('line_plot.pdf') 
-        return
+      #return useless return
     viz_linear()
     
     # Fitting Polynomial Regression to the dataset
@@ -54,7 +54,7 @@ def run_test():
         plt.ylabel('Salary')
         plt.show()
         plt.savefig('polynomial_plots/polymonial.png')
-        return
+      #return useless return
     viz_polymonial()
     
     # Additional feature
@@ -70,7 +70,7 @@ def run_test():
         plt.ylabel('Salary')
         plt.show()
         plt.savefig('polynomial_plots/polymonial_smooth.png')
-        return
+      #return useless return
     viz_polymonial_smooth()
     
     # Predicting a new result with Linear Regression
